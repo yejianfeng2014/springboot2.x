@@ -16,6 +16,8 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<mybatisplus-spring-boot-starter.version>1.0.4</mybatisplus-spring-boot-starter.version>
+		<mybatisplus.version>2.1.0</mybatisplus.version>
 	</properties>
 
 	<dependencies>
@@ -41,6 +43,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.24</version>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
@@ -61,9 +64,34 @@
 			<artifactId>spring-boot-starter-amqp</artifactId>
 		</dependency>
 
+
+
+		<!-- mybatis-plus begin自动代码生成  -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatisplus-spring-boot-starter</artifactId>
+			<version>${mybatisplus-spring-boot-starter.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus</artifactId>
+			<version>${mybatisplus.version}</version>
+		</dependency>
+		<!-- 模板引擎 代码生成 -->
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity</artifactId>
+			<version>1.7</version>
+		</dependency>
+
+
 	</dependencies>
 
-	<build>
+	<build>sq
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
